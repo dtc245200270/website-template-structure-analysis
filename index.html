@@ -1,0 +1,266 @@
+<!-- 1. Header: Chứa tiêu đề trang -->
+<header class="header">
+    <div class="header-container">
+        <h1 class="site-title">TECH HORIZON</h1>
+        <p class="site-tagline">Cổng thông tin &amp; Khám phá Công nghệ Mới</p>
+    </div>
+</header>
+
+<!-- 2. Navigation Menu: Tối thiểu 4 mục điều hướng -->
+<nav class="navbar">
+    <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Trang Chủ</a></li>
+            <li><a href="#news">Tin Tức</a></li>
+            <li><a href="#services">Dịch Vụ</a></li>
+            <li><a href="#projects">Dự Án</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 3. Content Section: Văn bản mô tả và hình ảnh -->
+<main class="content-section" id="news">
+    <div class="main-container">
+        <!-- Khu vực nội dung chính -->
+        <article class="primary-content">
+            <h2 class="content-title">Xu Hướng Phát Triển Web Frontend Hiện Đại</h2>
+            <p class="content-intro">
+                Trong bối cảnh công nghệ chuyển dịch nhanh chóng, việc nắm vững cấu trúc giao diện chuẩn Semantic HTML kết hợp bố cục CSS hiện đại là nền tảng cốt lõi giúp các nhà phát triển xây dựng website vừa tối ưu SEO vừa thân thiện với trải nghiệm người dùng.
+            </p>
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Lập trình viên làm việc trên máy tính" class="content-image">
+                <span class="image-caption">Hình 1: Không gian làm việc hiện đại của kỹ sư phát triển phần mềm.</span>
+            </div>
+            <p class="content-text">
+                Một trang web được cấu trúc chặt chẽ thường bao gồm các phân vùng rõ rệt từ Header, thanh điều hướng linh hoạt cho tới khu vực hiển thị nội dung trực quan. Điều này giúp tối ưu hóa khả năng đọc dữ liệu của cả người dùng lẫn các công cụ tìm kiếm.
+            </p>
+        </article>
+
+        <!-- Sidebar phụ -->
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">Danh Mục Phổ Biến</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#">Kiến trúc HTML5 Semantic</a></li>
+                    <li><a href="#">Kỹ thuật CSS Flexbox &amp; Grid</a></li>
+                    <li><a href="#">Tối ưu hóa hình ảnh web</a></li>
+                    <li><a href="#">Responsive Web Design</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<!-- 4. Footer: Chứa thông tin bản quyền -->
+<footer class="footer" id="contact">
+    <div class="footer-container">
+        <p class="copyright">&copy; 2026 Đinh Xuân Mạnh. All rights reserved.</p>
+        <p class="footer-subtext">Xây dựng và hoàn thiện bài thực hành phân tích cấu trúc Website Template.</p>
+    </div>
+</footer>
+body {
+background-color: #f8fafc;
+color: #334155;
+line-height: 1.6;
+}
+
+/* 1. Header */
+.header {
+background: linear-gradient(135deg, #1e293b, #0f172a);
+color: #ffffff;
+padding: 40px 20px;
+text-align: center;
+}
+
+.header-container {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.site-title {
+font-size: 32px;
+font-weight: 800;
+letter-spacing: 1.5px;
+margin-bottom: 8px;
+}
+
+.site-tagline {
+font-size: 16px;
+color: #94a3b8;
+}
+
+/* 2. Navigation Menu */
+.navbar {
+background-color: #334155;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.nav-links li a {
+display: block;
+color: #e2e8f0;
+text-decoration: none;
+padding: 14px 20px;
+font-weight: bold;
+font-size: 15px;
+transition: all 0.2s ease-in-out;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+background-color: #0ea5e9;
+color: #ffffff;
+}
+
+/* 3. Content Section */
+.content-section {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+.main-container {
+display: flex;
+gap: 30px;
+}
+
+.primary-content {
+flex: 3;
+background-color: #ffffff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.content-title {
+font-size: 24px;
+color: #0f172a;
+margin-bottom: 16px;
+}
+
+.content-intro {
+font-size: 16px;
+color: #475569;
+margin-bottom: 20px;
+}
+
+.image-wrapper {
+margin: 20px 0;
+text-align: center;
+}
+
+.content-image {
+width: 100%;
+max-height: 420px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.image-caption {
+display: block;
+margin-top: 8px;
+font-size: 13px;
+color: #64748b;
+font-style: italic;
+}
+
+.content-text {
+font-size: 15px;
+color: #475569;
+margin-top: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+flex: 1;
+}
+
+.sidebar-box {
+background-color: #ffffff;
+padding: 24px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-title {
+font-size: 18px;
+color: #0f172a;
+margin-bottom: 15px;
+padding-bottom: 8px;
+border-bottom: 2px solid #0ea5e9;
+}
+
+.sidebar-list {
+list-style: none;
+}
+
+.sidebar-list li {
+margin-bottom: 12px;
+}
+
+.sidebar-list li a {
+color: #2563eb;
+text-decoration: none;
+font-size: 14px;
+}
+
+.sidebar-list li a:hover {
+text-decoration: underline;
+}
+
+/* 4. Footer */
+.footer {
+background-color: #0f172a;
+color: #94a3b8;
+text-align: center;
+padding: 30px 20px;
+margin-top: 50px;
+}
+
+.footer-container {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.copyright {
+font-size: 15px;
+font-weight: 500;
+color: #cbd5e1;
+margin-bottom: 6px;
+}
+
+.footer-subtext {
+font-size: 13px;
+color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.main-container {
+flex-direction: column;
+}
+
+.nav-links {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-links li a {
+    border-bottom: 1px solid #475569;
+}
+}
